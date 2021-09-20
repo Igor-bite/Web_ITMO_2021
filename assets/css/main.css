@@ -1,0 +1,404 @@
+:root {
+    --imperial-red: #e63946ff;
+    --honeydew: #f1faeeff;
+    --powder-blue: #a8dadcff;
+    --celadon-blue: #457b9dff;
+    --prussian-blue: #1d3557ff;
+}
+
+@font-face {
+    font-family: 'Rubik One';
+    src: local('Rubik One Regular'), local('RubikOne-Regular'), url('/assets/fonts/rubikoneregular.woff2') format('woff2'), url('/assets/fonts/rubikoneregular.woff') format('woff'), url('/assets/fonts/rubikoneregular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--honeydew);
+}
+
+header {
+    height: 15vw;
+    background-size: auto;
+    background-position: center;
+    background-color: var(--imperial-red);
+    color: var(--prussian-blue);
+    border-bottom: var(--powder-blue) 5px solid;
+}
+
+header .container {
+    margin-left: 10%;
+    margin-top: 0;
+}
+
+header #brand_name {
+    float: left;
+    width: 45vw;
+    font-size: 2.8vw;
+    font-family: "Rubik One", sans-serif;
+}
+
+#brand_name h1 {
+    margin-top: 1vw;
+}
+
+header nav {
+    float: right;
+    width: auto;
+    font-size: 1.5vw;
+    margin-top: 7vw;
+    margin-right: 3vw;
+}
+
+header nav ul {
+    /*overflow: auto;*/
+}
+
+nav li {
+    margin-left: 10px;
+    display: inline-block;
+    padding: 0 20px 0 20px;
+    alignment: center;
+    text-transform: uppercase;
+}
+
+nav li:hover {
+    opacity: 80%;
+}
+
+.important {
+    background-color: var(--celadon-blue);
+    border-radius: 14px;
+    color: var(--powder-blue);
+    padding: 10px;
+}
+
+nav .not_important {
+    opacity: 50%;
+    color: var(--honeydew);
+    font-size: 1.2vw;
+    padding-top: 3px;
+}
+
+section h3 {
+    width: 60vw;
+    font-size: 3vw;
+    font-family: "Rubik One", cursive;
+    top: 10px;
+    left: 50px;
+    margin: 20px auto 10px 40px;
+    min-font-size: 600px;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    background-color: var(--imperial-red);
+    border-top: var(--powder-blue) 5px solid;
+    height: 50px;
+    margin-bottom: 0;
+    vertical-align: middle;
+    padding-top: 15px;
+    clear: both;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--prussian-blue);
+}
+
+footer a:hover {
+    opacity: 70%;
+}
+
+.grid-container {
+    float: left;
+    width: 75%;
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+
+.project_cell {
+    background-color: var(--powder-blue);
+    border-radius: 20px;
+    float: left;
+    height: 300px;
+    align-items: start;
+    text-align: start;
+    margin: 10px;
+    width: 400px;
+    font-size: 15px;
+}
+
+.project_cell h2 {
+    margin: 10px 0 0 10px;
+    padding: 10px;
+}
+
+.add_cell {
+    background-color: gray;
+    opacity: 30%;
+    border-radius: 20px;
+    place-items: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    margin: 15px;
+    height: 300px;
+    float: left;
+    width: 400px;
+}
+
+.add_cell h2 {
+    margin-top: 80px;
+}
+
+.add_cell:hover {
+    opacity: 20%;
+}
+
+.quote {
+    font-size: 1.5vw;
+    color: var(--honeydew);
+    background-color: var(--prussian-blue);
+    border: var(--celadon-blue) 5px dashed;
+    border-radius: 40px;
+    padding: 10px;
+    width: 60%;
+    alignment: center;
+    text-align: center;
+    margin: 0 20% 0 20%;
+}
+
+.quote sup, .quote sub {
+    opacity: revert;
+}
+
+sup .emphasis {
+    color: var(--imperial-red);
+    font-size: 1.7vw;
+    text-transform: uppercase;
+}
+
+aside {
+    margin-right: 40px;
+}
+
+aside p {
+    margin-left: 80%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+aside h3 {
+    margin-left: 80%;
+    text-align: center;
+}
+
+@media (max-width: 888px) {
+    .grid-container {
+        float: none;
+        alignment: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .grid-container .project_cell, .grid-container .add_cell {
+        width: 90%;
+    }
+
+    aside {
+        display: none;
+    }
+}
+
+@media (max-width: 1140px) {
+    header, header nav, header #brand_name, #brand_name h1, .container {
+        float: none;
+        alignment: center;
+        align-items: center;
+        margin: 0;
+        text-align: center;
+    }
+}
+
+.cpp .de1, .cpp .de2 {
+    font: normal normal 1em/1.2em monospace;
+    margin: 0;
+    padding: 0;
+    background: none;
+    vertical-align: top;
+    color: #000020;
+}
+
+.cpp {
+    font-family: monospace;
+    color: #006;
+    border: 1px solid #d0d0d0;
+    background-color: #f0f0f0;
+    margin-left: 20px;
+    padding: 20px;
+    margin-right: 60%;
+}
+
+.cpp a:link {
+    color: #000060;
+}
+
+.cpp a:hover {
+    background-color: #f0f000;
+}
+
+.cpp .imp {
+    font-weight: bold;
+    color: red;
+}
+
+.cpp li, .cpp .li1 {
+    vertical-align: top;
+    font: normal normal 130% 'Courier New', Courier, monospace;
+    color: #003030;
+}
+
+.cpp .ln {
+    width: 1px;
+    text-align: right;
+    margin: 0;
+    padding: 0 2px;
+    vertical-align: top;
+}
+
+.cpp .li2 {
+    font-weight: bold;
+    vertical-align: top;
+    color: #006060;
+}
+
+.cpp .kw1 {
+    color: #0000ff;
+}
+
+.cpp .kw2 {
+    color: #0000ff;
+}
+
+.cpp .kw3 {
+    color: #0000dd;
+}
+
+.cpp .kw4 {
+    color: #0000ff;
+}
+
+.cpp .co1 {
+    color: #666666;
+}
+
+.cpp .co2 {
+    color: #339900;
+}
+
+.cpp .coMULTI {
+    color: #ff0000;
+    font-style: italic;
+}
+
+.cpp .es0 {
+    color: #000099;
+    font-weight: bold;
+}
+
+.cpp .es1 {
+    color: #000099;
+    font-weight: bold;
+}
+
+.cpp .es2 {
+    color: #660099;
+    font-weight: bold;
+}
+
+.cpp .es3 {
+    color: #660099;
+    font-weight: bold;
+}
+
+.cpp .es4 {
+    color: #660099;
+    font-weight: bold;
+}
+
+.cpp .es5 {
+    color: #006699;
+    font-weight: bold;
+}
+
+.cpp .br0 {
+    color: #008000;
+}
+
+.cpp .sy0 {
+    color: #008000;
+}
+
+.cpp .sy1 {
+    color: #000080;
+}
+
+.cpp .sy2 {
+    color: #000040;
+}
+
+.cpp .sy3 {
+    color: #000040;
+}
+
+.cpp .sy4 {
+    color: #008080;
+}
+
+.cpp .st0 {
+    color: #FF0000;
+}
+
+.cpp .nu0 {
+    color: #0000dd;
+}
+
+.cpp .nu6 {
+    color: #208080;
+}
+
+.cpp .nu8 {
+    color: #208080;
+}
+
+.cpp .nu12 {
+    color: #208080;
+}
+
+.cpp .nu16 {
+    color: #800080;
+}
+
+.cpp .nu17 {
+    color: #800080;
+}
+
+.cpp .nu18 {
+    color: #800080;
+}
+
+.cpp .nu19 {
+    color: #800080;
+}
+
+.cpp .me1 {
+    color: #007788;
+}
+
+.cpp .me2 {
+    color: #007788;
+}

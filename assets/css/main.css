@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: 'Rubik One';
-    src: url('/assets/fonts/rubikoneregular.woff2') format('woff2'), url('/assets/fonts/rubikoneregular.woff') format('woff'), url('/assets/fonts/rubikoneregular.ttf') format('truetype');
+    src: url('fonts/rubikoneregular.woff2') format('woff2'), url('fonts/rubikoneregular.woff') format('woff'), url('fonts/rubikoneregular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
@@ -121,7 +121,7 @@ footer a:hover {
 }
 
 main {
-    background-image: url('/assets/images/waves.png');
+    background-image: url('images/waves.png');
     background-size: 100vw;
     background-repeat: no-repeat;
     padding-top: 20px;
@@ -226,7 +226,7 @@ main {
 
 sup .emphasis {
     color: var(--imperial-red);
-    font-size: 1.7vw;
+    font-size: 2vw;
     text-transform: uppercase;
 }
 

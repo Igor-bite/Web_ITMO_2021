@@ -109,6 +109,10 @@ footer a:hover {
     opacity: 70%;
 }
 
+.mini_size {
+    display: none;
+}
+
 .grid-container {
     float: left;
     display: flex;
@@ -263,6 +267,14 @@ ol {
     aside {
         display: none;
     }
+
+    .full_size {
+        display: none;
+    }
+
+    .mini_size {
+        display: contents;
+    }
 }
 
 @media (max-width: 1140px) {
@@ -275,182 +287,3 @@ ol {
     }
 }
 
-.cpp .de1, .cpp .de2 {
-    font: normal normal 1em/1.2em monospace;
-    margin: 0;
-    padding: 0;
-    background: none;
-    vertical-align: top;
-    color: #000020;
-}
-
-.cpp {
-    font-family: monospace;
-    color: #006;
-    border: 1px solid #d0d0d0;
-    background-color: #f0f0f0;
-    margin-left: 20px;
-    padding: 20px;
-    margin-right: 60%;
-    min-width: 450px;
-}
-
-.cpp a:link {
-    color: #000060;
-}
-
-.cpp a:hover {
-    background-color: #f0f000;
-}
-
-.cpp .imp {
-    font-weight: bold;
-    color: red;
-}
-
-.cpp li, .cpp .li1 {
-    vertical-align: top;
-    font: normal normal 130% 'Courier New', Courier, monospace;
-    color: #003030;
-}
-
-.cpp .ln {
-    width: 1px;
-    text-align: right;
-    margin: 0;
-    padding: 0 2px;
-    vertical-align: top;
-}
-
-.cpp .li2 {
-    font-weight: bold;
-    vertical-align: top;
-    color: #006060;
-}
-
-.cpp .kw1 {
-    color: #0000ff;
-}
-
-.cpp .kw2 {
-    color: #0000ff;
-}
-
-.cpp .kw3 {
-    color: #0000dd;
-}
-
-.cpp .kw4 {
-    color: #0000ff;
-}
-
-.cpp .co1 {
-    color: #666666;
-}
-
-.cpp .co2 {
-    color: #339900;
-}
-
-.cpp .coMULTI {
-    color: #ff0000;
-    font-style: italic;
-}
-
-.cpp .es0 {
-    color: #000099;
-    font-weight: bold;
-}
-
-.cpp .es1 {
-    color: #000099;
-    font-weight: bold;
-}
-
-.cpp .es2 {
-    color: #660099;
-    font-weight: bold;
-}
-
-.cpp .es3 {
-    color: #660099;
-    font-weight: bold;
-}
-
-.cpp .es4 {
-    color: #660099;
-    font-weight: bold;
-}
-
-.cpp .es5 {
-    color: #006699;
-    font-weight: bold;
-}
-
-.cpp .br0 {
-    color: #008000;
-}
-
-.cpp .sy0 {
-    color: #008000;
-}
-
-.cpp .sy1 {
-    color: #000080;
-}
-
-.cpp .sy2 {
-    color: #000040;
-}
-
-.cpp .sy3 {
-    color: #000040;
-}
-
-.cpp .sy4 {
-    color: #008080;
-}
-
-.cpp .st0 {
-    color: #FF0000;
-}
-
-.cpp .nu0 {
-    color: #0000dd;
-}
-
-.cpp .nu6 {
-    color: #208080;
-}
-
-.cpp .nu8 {
-    color: #208080;
-}
-
-.cpp .nu12 {
-    color: #208080;
-}
-
-.cpp .nu16 {
-    color: #800080;
-}
-
-.cpp .nu17 {
-    color: #800080;
-}
-
-.cpp .nu18 {
-    color: #800080;
-}
-
-.cpp .nu19 {
-    color: #800080;
-}
-
-.cpp .me1 {
-    color: #007788;
-}
-
-.cpp .me2 {
-    color: #007788;
-}

@@ -20,21 +20,25 @@ body {
 }
 
 header {
-    height: 15vw;
+    height: 10vw;
     background-size: auto;
     background-position: center;
     background-color: var(--imperial-red);
     color: var(--prussian-blue);
+    position: fixed;
+    z-index: 2;
+    width: 100%;
 }
 
 header .header_container {
     margin-left: 10%;
     margin-top: 0;
+    display: flex;
+    flex-direction: row;
 }
 
 header #brand_name {
-    float: left;
-    width: 45vw;
+    flex:  2 1 auto;
     font-size: 2.8vw;
     font-family: "Rubik One", sans-serif;
 }
@@ -44,11 +48,8 @@ header #brand_name {
 }
 
 header nav {
-    float: right;
-    width: auto;
+    flex:  1 2 auto;
     font-size: 1.5vw;
-    margin-top: 7vw;
-    margin-right: 3vw;
 }
 
 nav li {
@@ -83,7 +84,7 @@ section h3 {
     font-family: "Rubik One", cursive;
     top: 10px;
     left: 50px;
-    margin: 20px auto 10px 40px;
+    margin: 10vw auto 10px 40px;
     min-font-size: 600px;
 }
 
@@ -277,13 +278,11 @@ ol {
     }
 }
 
-@media (max-width: 1140px) {
-    header, header nav, header #brand_name, #brand_name h1, .header_container {
-        float: none;
-        alignment: center;
-        align-items: center;
-        margin: 0;
-        text-align: center;
-    }
+header, header nav, header #brand_name, .header_container {
+    float: none;
+    alignment: center;
+    align-items: center;
+    margin: 0;
+    text-align: center;
 }
 

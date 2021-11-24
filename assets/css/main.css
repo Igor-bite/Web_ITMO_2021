@@ -16,52 +16,10 @@
 body {
     padding: 0;
     margin: 0;
+}
+
+.main {
     background: linear-gradient(rgba(255,254,234,1) 0%, rgba(255,254,234,1) 35%, #B7E8EB 100%);
-}
-
-header {
-    height: 10vw;
-    background-size: auto;
-    background-position: center;
-    background-color: var(--imperial-red);
-    color: var(--prussian-blue);
-    position: fixed;
-    z-index: 2;
-    width: 100%;
-}
-
-header .header_container {
-    margin-left: 10%;
-    margin-top: 0;
-    display: flex;
-    flex-direction: row;
-}
-
-header #brand_name {
-    flex:  2 1 auto;
-    font-size: 2.8vw;
-    font-family: "Rubik One", sans-serif;
-}
-
-#brand_name h1 {
-    margin-top: 1vw;
-}
-
-header nav {
-    flex:  1 2 auto;
-    font-size: 1.5vw;
-}
-
-nav li {
-    margin-left: 10px;
-    display: inline-block;
-    padding: 0 20px 0 20px;
-    alignment: center;
-    text-transform: uppercase;
-}
-
-nav li:hover {
-    opacity: 80%;
 }
 
 .important {
@@ -71,15 +29,8 @@ nav li:hover {
     padding: 10px;
 }
 
-nav .not_important {
-    opacity: 50%;
-    color: var(--honeydew);
-    font-size: 1.2vw;
-    padding-top: 3px;
-}
-
-section h3 {
-    width: 60vw;
+article h3 {
+    width: 70vw;
     font-size: 3vw;
     font-family: "Rubik One", cursive;
     top: 10px;
@@ -88,14 +39,18 @@ section h3 {
     min-font-size: 600px;
 }
 
+.page_name {
+    margin-top: 7rem;
+}
+
 .price_plans_container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 10px;
     grid-column-gap: 1vw;
     grid-row-gap: 2px;
-    border: 10px dotted var(--celadon-blue);
-    margin: 10px 5vw 10px 5vw;
+    border: 10px dotted #e20f2f;
+    margin: 70px 5vw 10px 5vw;
 }
 
 .grid-item, .grid-item-header, .grid-item-price, .grid-item-button {
@@ -135,11 +90,8 @@ section h3 {
 footer {
     text-align: center;
     width: 100%;
-    background-color: var(--imperial-red);
-    border-top: var(--powder-blue) 5px solid;
     height: 30%;
     margin-bottom: 0;
-    margin-top: 0px;
     vertical-align: middle;
     padding-top: 15px;
     clear: both;
@@ -170,14 +122,13 @@ footer a:hover {
 }
 
 main {
-    background-image: url('images/waves.png');
     background-size: 100vw;
     background-repeat: no-repeat;
     padding-top: 20px;
 }
 
 #projects {
-    margin-top: 10vw;
+    margin-top: 7rem;
 }
 
 .project_cell {
@@ -208,16 +159,8 @@ main {
     transition: all 0.5s ease;
 }
 
-/*.project_cell .bg {*/
-/*    background-color: white;*/
-/*    opacity: 50%;*/
-/*    filter: blur(3px);*/
-/*    border-radius: 20px;*/
-/*    margin: 10px 60% 0 10px;*/
-/*}*/
-
 .project_cell h2 {
-    margin: 10px 60% 0 10px;
+    margin: 10px 50% 0 10px;
     text-align: center;
     padding: 10px;
 }

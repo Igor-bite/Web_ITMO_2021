@@ -246,61 +246,6 @@ ol {
     font-family: "Rubik One", sans-serif;
 }
 
-@media (max-width: 888px) {
-    .projects_container {
-        width: auto;
-        margin: 40px;
-    }
-
-    .projects_container .project_cell, .projects_container .add_cell {
-        margin: 20px;
-    }
-
-    aside {
-        display: none;
-    }
-
-    .full_size {
-        display: none;
-    }
-
-    .mini_size {
-        display: contents;
-    }
-
-    .price_plans_container {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .grid-item, .grid-item-price, .grid-item-button {
-        font-size: 3vw;
-    }
-
-    .grid-item-button {
-        margin-bottom: 30px;
-        border-bottom: 6px solid var(--imperial-red);
-    }
-
-    .grid-item-header {
-        border: none;
-        border-top: 6px solid var(--imperial-red);
-        font-size: 4vw;
-    }
-
-    .grid-item:nth-child(odd) {
-        /*background-color: rgba(255, 255, 255, 0.8);*/
-        background-color: #B7E8EB;
-    }
-
-    .grid-item:nth-child(10), .grid-item:nth-child(12) {
-        background-color: #B7E8EB;
-    }
-
-    .grid-item:nth-child(11), .grid-item:nth-child(13), .grid-item:nth-child(20)  {
-        background-color: rgba(255, 255, 255, 0.8);
-    }
-}
-
 header, header nav, header #brand_name, .header_container {
     float: none;
     alignment: center;
@@ -309,11 +254,12 @@ header, header nav, header #brand_name, .header_container {
     text-align: center;
 }
 
-#todo__list h3 {
-    margin-right: 40px;
-    margin-left: 78%;
+#todo__list {
+    margin-right: 20px;
+    margin-left: 77%;
     text-align: center;
     margin-top: 40px;
+    cursor: pointer;
 }
 
 .todo {
@@ -326,6 +272,7 @@ header, header nav, header #brand_name, .header_container {
 
 .todo__input {
     position: relative;
+    left: 10px;
 }
 
 .todo__text {
@@ -336,7 +283,7 @@ header, header nav, header #brand_name, .header_container {
     border-radius: 4px;
     border: 1px solid #e0e0e0;
     padding: 6px 34px 6px 10px;
-    width: 225px;
+    width: 200px;
 }
 
 .todo__text:focus {
@@ -379,8 +326,6 @@ header, header nav, header #brand_name, .header_container {
 }
 
 .todo__options {
-    -webkit-appearance: none;
-    -moz-appearance: none;
     appearance: none;
     background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='12' fill='%23fff'%3E%3Cpath d='M0 0h24L12 12z'/%3E%3C/svg%3E") calc(100% - 10px) center no-repeat;
     background-color: #8bc34a;
@@ -396,6 +341,7 @@ header, header nav, header #brand_name, .header_container {
     outline: none;
     padding: 2px 30px 6px 12px;
     width: 150px;
+    margin-right: 5px;
 }
 
 /* скрываем дефолтную стрелку в IE10 и IE11 */
@@ -416,6 +362,7 @@ header, header nav, header #brand_name, .header_container {
     margin-right: auto;
     max-height: 275px;
     overflow-y:auto;
+    margin-top: 10px;
 }
 
 .todo__item {
@@ -507,4 +454,67 @@ header, header nav, header #brand_name, .header_container {
 [data-todo-option="completed"] .todo__item:not([data-todo-state="completed"]),
 [data-todo-option="deleted"] .todo__item:not([data-todo-state="deleted"]) {
     display: none;
+}
+
+@media (max-width: 888px) {
+    .projects_container {
+        width: auto;
+        margin: 40px;
+    }
+
+    .projects_container .project_cell, .projects_container .add_cell {
+        margin: 20px;
+    }
+
+    aside {
+        display: none;
+    }
+
+    #todo__list {
+        margin-left: 40px;
+        left: 40px;
+    }
+
+    #todo__list h3 {
+        display: flow-root;
+    }
+
+    .full_size {
+        display: none;
+    }
+
+    .mini_size {
+        display: contents;
+    }
+
+    .price_plans_container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .grid-item, .grid-item-price, .grid-item-button {
+        font-size: 3vw;
+    }
+
+    .grid-item-button {
+        margin-bottom: 30px;
+        border-bottom: 6px solid var(--imperial-red);
+    }
+
+    .grid-item-header {
+        border: none;
+        border-top: 6px solid var(--imperial-red);
+        font-size: 4vw;
+    }
+
+    .grid-item:nth-child(odd) {
+        background-color: #B7E8EB;
+    }
+
+    .grid-item:nth-child(10), .grid-item:nth-child(12) {
+        background-color: #B7E8EB;
+    }
+
+    .grid-item:nth-child(11), .grid-item:nth-child(13), .grid-item:nth-child(20)  {
+        background-color: rgba(255, 255, 255, 0.8);
+    }
 }

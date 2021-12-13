@@ -1,29 +1,5 @@
 'use strict';
 
-// polyfill closest
-// if (!Element.prototype.matches) {
-//     Element.prototype.matches = Element.prototype.msMatchesSelector || Element.prototype.webkitMatchesSelector;
-// }
-// if (!Element.prototype.closest) {
-//     Element.prototype.closest = function(s) {
-//         var el = this;
-//         do {
-//             if (Element.prototype.matches.call(el, s)) return el;
-//             el = el.parentElement || el.parentNode;
-//         } while (el !== null && el.nodeType === 1);
-//         return null;
-//     };
-// }
-
-// polyfill remove
-// if (!('remove' in Element.prototype)) {
-//     Element.prototype.remove = function() {
-//         if (this.parentNode) {
-//             this.parentNode.removeChild(this);
-//         }
-//     };
-// }
-
 var form = document.getElementById("add_form");
 function handleForm(event) {
     event.preventDefault();
@@ -47,7 +23,7 @@ var todo = {
     },
 
     add: function add() {
-        var elemText = document.querySelector(".todo__text");
+        const elemText = document.querySelector(".todo__text");
         if (elemText.disabled || !elemText.value.length) {
             return;
         }
@@ -73,11 +49,21 @@ var todo = {
         document.querySelector(".todo__items").dataset.todoOption = option;
         document.querySelector(".todo__text").disabled = option !== "active";
     },
+    delete: function () {
+        localStorage.removeItem("todo");
+        document.querySelector(".todo__items").innerHTML = ""
+    },
     save: function() {
-        localStorage.setItem(
-            "todo",
-            document.querySelector(".todo__items").innerHTML
-        );
+        try {
+            localStorage.setItem(
+                "todo",
+                document.querySelector(".todo__items").innerHTML
+            );
+        } catch (e) {
+            if (e == QUOTA_EXCEEDED_ERR) {
+                alert("Превышен лимит по памяти")
+            }
+        }
     }
 };
 todo.init();
